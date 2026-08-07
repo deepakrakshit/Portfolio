@@ -1,0 +1,267 @@
+// ──────────────────────────────────────────────
+//  NEO-BRUTALIST PREMIUM PAGE LOADER
+// ──────────────────────────────────────────────
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: #f9f9f9; // Matching website background color
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  overflow: hidden;
+
+  &--exit {
+    background: transparent;
+  }
+}
+
+// ── Subtle Dot Grid Backdrop ───────────────────
+.page-loader__grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+// ── Phase 1: Glitch Big Text ───────────────────
+.page-loader__glitch-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 5;
+  text-align: center;
+}
+
+.page-loader__glitch-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.page-loader__glitch-char {
+  display: inline-block;
+
+  &--resolved {
+    color: #000000;
+  }
+
+  &--scrambling {
+    color: #ffffff;
+    background: #000000; // Neo-brutalist inverse box look
+    padding: 0 4px;
+    margin: 0 2px;
+    animation: char-flash 0.1s step-end infinite;
+  }
+}
+
+@keyframes char-flash {
+  0%, 100% { color: #ffffff; background: #000000; }
+  50% { color: #000000; background: #f0ff00; }
+}
+
+.page-loader__glitch-subtitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(0.75rem, 2vw, 1.1rem);
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  background: #f0ff00;
+  padding: 4px 12px;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+// ── Phase 2: Neo-Brutalist Console Modal ─────
+.nb-loader {
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  border: 4px solid #000000;
+  box-shadow: 10px 10px 0px #f0ff00; // Thick flat brand shadow
+  font-family: "Space Grotesk", monospace;
+  overflow: hidden;
+  z-index: 5;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: #f0ff00;
+    border-bottom: 4px solid #000000;
+  }
+
+  &__header-dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__header-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    background: #ffffff;
+
+    &:nth-child(1) { background: #ff5f56; }
+    &:nth-child(2) { background: #ffbd2e; }
+    &:nth-child(3) { background: #27c93f; }
+  }
+
+  &__title {
+    font-size: 0.8rem;
+    color: #000000;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__badge {
+    font-size: 0.7rem;
+    color: #ffffff;
+    background: #000000;
+    font-weight: 900;
+    padding: 2px 10px;
+    border: 2px solid #000000;
+    letter-spacing: 0.05em;
+  }
+
+  &__body {
+    padding: 24px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #ffffff;
+  }
+
+  &__line {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 700;
+
+    &--command {
+      color: #131316;
+    }
+
+    &--success {
+      color: #000000;
+    }
+
+    &--final {
+      color: #000000;
+      background: #f0ff00;
+      border: 3px solid #000000;
+      padding: 8px 14px;
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 10px;
+      box-shadow: 4px 4px 0px #000000;
+    }
+  }
+
+  &__text {
+    white-space: pre-wrap;
+  }
+
+  &__cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.1em;
+    background: #000000;
+    margin-left: 6px;
+    animation: blink-cursor 0.8s step-end infinite;
+  }
+}
+
+// ── Progress Bar ──────────────────────────────
+.nb-loader__progress-track {
+  height: 12px;
+  background: #ffffff;
+  border-top: 4px solid #000000;
+  width: 100%;
+
+  .nb-loader__progress-fill {
+    height: 100%;
+    background: #f0ff00;
+    border-right: 4px solid #000000;
+    transition: width 0.25s ease;
+  }
+}
+
+.page-loader__global-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #ffffff;
+  border-top: 2px solid #000000;
+  z-index: 20;
+}
+
+.page-loader__global-progress-fill {
+  height: 100%;
+  background: #f0ff00;
+  transition: width 0.25s ease;
+}
+
+// ── Phase 3: Split Exit Doors ──────────────────
+.page-loader__split {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #f9f9f9;
+  z-index: 4;
+
+  &--left {
+    left: 0;
+    border-right: 3px solid #000000;
+  }
+
+  &--right {
+    right: 0;
+    border-left: 3px solid #000000;
+  }
+}
+
+
+// ── Mobile Responsive ────────────────────────
+@media (max-width: 576px) {
+  .nb-loader {
+    width: 92%;
+    box-shadow: 6px 6px 0px #f0ff00;
+
+    &__header {
+      padding: 10px 14px;
+    }
+
+    &__title {
+      font-size: 0.75rem;
+    }
+
+    &__body {
+      padding: 18px;
+      min-height: 180px;
+    }
+
+    &__line {
+      font-size: 0.8rem;
+    }
+  }
+}

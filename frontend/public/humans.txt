@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Deepak Rakshit
+Role: AI Engineer & Full Stack Developer
+Site: https://deepakrakshit.is-a.dev/
+LinkedIn: https://www.linkedin.com/in/deepakrakshit/
+GitHub: https://github.com/deepakrakshit
+
+/* SITE */
+Stack: React, Vite, Framer Motion, Lenis, Tailwind CSS
+Language: English
+Last updated: 2026-09-27

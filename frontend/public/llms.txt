@@ -1,0 +1,18 @@
+# Deepak Rakshit
+
+> AI Engineer and Full Stack Developer in Greater Noida, India (NIET). Builds agentic AI systems, Gemini Live API applications, and production full-stack apps. This portfolio site runs on React, Vite, React Router, Tailwind CSS, and Framer Motion.
+
+## Site
+- [Portfolio home](https://deepakrakshit.is-a.dev/): Overview, stats, and entry points to projects and contact
+- [Projects](https://deepakrakshit.is-a.dev/projects): Engineering projects and software applications
+- [Experience](https://deepakrakshit.is-a.dev/experience): Work history and career timeline
+- [Research](https://deepakrakshit.is-a.dev/research): Research papers and technical publications
+- [Skills](https://deepakrakshit.is-a.dev/skills): Technical skills and developer tooling
+- [About](https://deepakrakshit.is-a.dev/about): Developer bio and career details
+- [Contact](https://deepakrakshit.is-a.dev/contact): Email and hire/collaboration form
+- [Resume PDF](https://deepakrakshit.is-a.dev/resume.pdf): Downloadable CV
+
+## Also useful
+- [Certifications](https://deepakrakshit.is-a.dev/certifications): Industry credentials and learning milestones
+- [GitHub](https://github.com/deepakrakshit): Source repositories
+- [LinkedIn](https://www.linkedin.com/in/deepakrakshit/): Professional profile
