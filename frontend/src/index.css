@@ -15,3 +15,10 @@
 .bg-hatch {
   background-image: repeating-linear-gradient(45deg, var(--border-color) 0, var(--border-color) 1px, transparent 0, transparent 8px);
 }
+
+.shadow-brutalist {
+  box-shadow: 4px 4px 0px 0px var(--shadow-color);
+}
+.shadow-brutalist-lg {
+  box-shadow: 8px 8px 0px 0px var(--shadow-color);
+}
