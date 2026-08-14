@@ -30,3 +30,14 @@
   background: var(--border-color);
   border: 2px solid var(--color-background);
 }
+
+.font-headline-lg {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+}
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+}
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
