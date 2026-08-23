@@ -15,3 +15,7 @@ Built with React, Vite, Tailwind CSS, and Framer Motion.
 - `src/config/`: Single source of truth for routes and SEO metadata
 - `src/utils/`: Audio engine, device detection, motion variants
 - `src/context/`: Modular reactive contexts for themes, toasts, sound
+
+## Gamification & Achievements
+
+17 secret achievements hidden across the portfolio. Discover terminal commands, keyboard shortcuts, and retro modes.
