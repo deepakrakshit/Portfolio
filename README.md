@@ -19,3 +19,9 @@ Built with React, Vite, Tailwind CSS, and Framer Motion.
 ## Gamification & Achievements
 
 17 secret achievements hidden across the portfolio. Discover terminal commands, keyboard shortcuts, and retro modes.
+
+## Interactive Components
+
+- DevTools HUD (Ctrl+Alt+D)
+- Custom neo-brutalist cursor with spark particle physics
+- Web Audio synthesizer engine
