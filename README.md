@@ -25,3 +25,7 @@ Built with React, Vite, Tailwind CSS, and Framer Motion.
 - DevTools HUD (Ctrl+Alt+D)
 - Custom neo-brutalist cursor with spark particle physics
 - Web Audio synthesizer engine
+
+## AI Co-Pilot: RAY
+
+Built-in autonomous agent capable of site navigation, theme switching, and live Q&A about projects and background.
