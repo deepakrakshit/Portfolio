@@ -29,3 +29,7 @@ Built with React, Vite, Tailwind CSS, and Framer Motion.
 ## AI Co-Pilot: RAY
 
 Built-in autonomous agent capable of site navigation, theme switching, and live Q&A about projects and background.
+
+## Interactive Playground CLI
+
+Access via `/playground` or shortcut `7`. Commands include `help`, `neofetch`, `matrix`, `sudo hire-me`, `skills`, `projects`.
