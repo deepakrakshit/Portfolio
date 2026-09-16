@@ -33,3 +33,10 @@ Built-in autonomous agent capable of site navigation, theme switching, and live 
 ## Interactive Playground CLI
 
 Access via `/playground` or shortcut `7`. Commands include `help`, `neofetch`, `matrix`, `sudo hire-me`, `skills`, `projects`.
+
+## Serverless APIs
+
+- `/api/chat`: AI Assistant proxy with tool calling
+- `/api/contact`: Direct contact dispatcher
+- `/api/guestbook`: Visitor signatures with rate limiting
+- `/api/github-stats`: Live repository activity metrics
