@@ -40,3 +40,10 @@ Access via `/playground` or shortcut `7`. Commands include `help`, `neofetch`, `
 - `/api/contact`: Direct contact dispatcher
 - `/api/guestbook`: Visitor signatures with rate limiting
 - `/api/github-stats`: Live repository activity metrics
+
+## Lighthouse Performance
+
+- Performance: 100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
