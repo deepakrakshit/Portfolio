@@ -62,6 +62,16 @@ npm run preview   # Preview production build
 npm run lint      # Run ESLint
 ```
 
+## Deployment
+
+### Deploying to Vercel
+
+1. Import this repository into [Vercel](https://vercel.com).
+2. Under **Project Settings**:
+   - Set **Root Directory** to `frontend`.
+   - Build command (`npm run build`) and output directory (`dist`) are automatically detected via Vite.
+3. Deploy! Static assets including the resume (`/resume.pdf`), PWA service worker, and pre-rendered routes are served automatically with optimized cache and security headers.
+
 ## Accessibility & Performance
 
 - Keyboard navigation is first-class: dock links, cards, palette commands, modals, and route shortcuts are operable without a mouse.

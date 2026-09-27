@@ -16,7 +16,7 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
         { "key": "Content-Type", "value": "application/pdf" },
-        { "key": "Content-Disposition", "value": "inline; filename=\"resume.pdf\"" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"Deepak_Rakshit_Resume.pdf\"" },
         { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     },
