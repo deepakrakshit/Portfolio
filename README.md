@@ -79,3 +79,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 - Email: [deepakrakshit505@gmail.com](mailto:deepakrakshit505@gmail.com)
 - LinkedIn: [Deepak Rakshit](https://www.linkedin.com/in/deepakrakshit/)
 - GitHub: [@deepakrakshit](https://github.com/deepakrakshit)
+
+---
+*Portfolio v2.0.0 production baseline complete.*
