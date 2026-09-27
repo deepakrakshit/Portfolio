@@ -1,49 +1,81 @@
-# Deepak Rakshit - Portfolio
+# Deepak Rakshit Portfolio
 
-Personal AI Engineer & Full Stack Developer portfolio.
+A high-contrast, interactive developer portfolio for Deepak Rakshit, built with React, Vite, Framer Motion, Tailwind CSS v4 tokens, and a custom Canvas tech globe.
 
-Built with React, Vite, Tailwind CSS, and Framer Motion.
+Live site: [deepakrakshit.is-a.dev](https://deepakrakshit.is-a.dev/)
+
+## What It Does
+
+- Presents projects, skills, certifications, experience, contact options, and resume details in a cohesive neo-brutalist interface.
+- Uses a custom 3D Canvas globe to visualize the technology stack without adding heavy WebGL dependencies.
+- Provides fast navigation through a floating dock, command palette, CLI playground, and Alt-key shortcuts.
+- Supports light/dark themes, custom cursor mode, smooth Lenis scrolling, sound feedback, toasts, modals, and first-visit navigation hints.
+- Ships with SEO metadata, structured data, lazy-loaded routes, production code splitting, and Vercel Analytics.
 
 ## Tech Stack
 
-- **Frontend**: React 18, Vite 5, Tailwind CSS, Framer Motion
-- **Backend / Edge**: Serverless Functions, Upstash Redis
-- **Design**: Neo-brutalism, high contrast, responsive grid
+- React 18, React Router, Vite
+- Framer Motion for page transitions, card reveals, modals, and micro-interactions
+- Tailwind CSS v4 design tokens with CSS custom properties
+- SCSS/CSS utilities for loader, terminal, cursor, noise, and neo-brutalist styling
+- Lenis for smooth scrolling
+- React Icons for UI and skill icons
+- Vercel Analytics
 
-## Architecture
+## Project Structure
 
-- `src/config/`: Single source of truth for routes and SEO metadata
-- `src/utils/`: Audio engine, device detection, motion variants
-- `src/context/`: Modular reactive contexts for themes, toasts, sound
+```text
+frontend/
+  src/
+    components/       Shared UI: dock, header, globe, command palette, loader
+    context/          Theme, toast, sound, and smooth-scroll providers
+    data/             Projects, skills, experience, certifications
+    hooks/            Modal lock, keyboard navigation, visibility helpers
+    pages/            Home, Projects, Experience, Skills, About, Contact, etc.
+    utils/            Motion presets, paths, icons
+```
 
-## Gamification & Achievements
+## Keyboard Shortcuts
 
-17 secret achievements hidden across the portfolio. Discover terminal commands, keyboard shortcuts, and retro modes.
+- `Ctrl+K`, `Meta+K`, or `Alt+K`: open command palette
+- `Alt+1` through `Alt+7`: jump between primary pages
+- `?`: open the shortcut guide
+- `Tab`: autocomplete commands inside the CLI playground
+- `Esc`: close overlays
 
-## Interactive Components
+## Local Development
 
-- DevTools HUD (Ctrl+Alt+D)
-- Custom neo-brutalist cursor with spark particle physics
-- Web Audio synthesizer engine
+```sh
+cd frontend
+npm install
+npm run dev
+```
 
-## AI Co-Pilot: RAY
+The dev server runs on `http://localhost:3000`.
 
-Built-in autonomous agent capable of site navigation, theme switching, and live Q&A about projects and background.
+## Scripts
 
-## Interactive Playground CLI
+```sh
+npm run dev       # Start Vite dev server
+npm run build     # Build production assets
+npm run preview   # Preview production build
+npm run lint      # Run ESLint
+```
 
-Access via `/playground` or shortcut `7`. Commands include `help`, `neofetch`, `matrix`, `sudo hire-me`, `skills`, `projects`.
+## Accessibility & Performance
 
-## Serverless APIs
+- Keyboard navigation is first-class: dock links, cards, palette commands, modals, and route shortcuts are operable without a mouse.
+- Decorative animation respects `prefers-reduced-motion` where practical.
+- Routes are lazy-loaded and major vendor libraries are split into chunks.
+- The globe uses Canvas with visibility-based pausing and no additional runtime dependency.
+- Theme colors are centralized in `frontend/src/index.css` to maintain contrast across light and dark modes.
 
-- `/api/chat`: AI Assistant proxy with tool calling
-- `/api/contact`: Direct contact dispatcher
-- `/api/guestbook`: Visitor signatures with rate limiting
-- `/api/github-stats`: Live repository activity metrics
+## License
 
-## Lighthouse Performance
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
-- Performance: 100
-- Accessibility: 100
-- Best Practices: 100
-- SEO: 100
+## Contact
+
+- Email: [deepakrakshit505@gmail.com](mailto:deepakrakshit505@gmail.com)
+- LinkedIn: [Deepak Rakshit](https://www.linkedin.com/in/deepakrakshit/)
+- GitHub: [@deepakrakshit](https://github.com/deepakrakshit)
